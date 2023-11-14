@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Basic HTML</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <style>
+        .alert {
+            color: #a9a9a9;
+            border: 3px solid orangered;
+            font-size: 25px;
+        }
+
+        #byline {
+            color: red;
+        }
+
+        h1 {
+            border: 3px solid magenta;
+            color: maroon;
+            font-size: 35px;
+            font-family: 'sans-serif;', serif;
+            width: 50%;
+        }
+
+        #quote {
+            color: gray; 
+            font-style: italic;
+            border: solid lightskyblue 2px;
+        }
+
+        #bargraph {
+            border: 1px solid gray;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            width: 25%;
+        }
+
+        .bar_label {
+            color: red;
+        }
+
+        #longest {
+            width: 300px;
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+        }
+
+        #longer {
+            width: 200px; 
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+        }
+
+        #long {
+            width: 100px; 
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+}
+            .book {
+                border:3px solid skyblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Messing with CSS -->
+    <div>
+        <h3 class="alert"> Breaking news: The sky is grey today. </h3>
+        <p id="byline"> Reporting by JNL221 </p>
+    </div>
+
+    <h1>My name is Angela Meissner. <p></h1>
+    <h2>I am from <i>New York City</i>, and I am studying <strong> Broadcasting and Digital Journal </strong> at Syracuse. On campus, I write for the Opinion Section of the Daily Orange, and am on the 'Zipped Magazine' Editorial Team. I am also the philanthropy chair for my sorority. For fun, I like to run, swim, spend time with friends, and my family's cavapoo named Clashmore Mile. I have an identical twin sister who goes to UT Austin. </h2>
+    <!-- Include: a brief intro to yourself -- where you're from, what you like to do for fun, what you're studying, and who your community or family is. -->
+    <!-- Tags to use: <p>, <strong>, <i> -->
+
+    <h2> <a href="https://www.instagram.com/angelameissner/" target="_blank">Instagram: @angelameissner</a> Snapchat: @angela_meissner </h2>
+    <!-- Include: at least two handles for your social media accounts -->
+    <!-- Tags to use: <p>, <a> -->
+
+    <h2> ~ Challenge: Why is my text maroon? ~</h2>
+    <!-- Challenge! The text in your p tags is currently maroon. Figure out why and make it dark gray, using a hex code. (Hint: use google to find a hex code for dark gray) When you're done, change the text in the <p> tag below to "My text is gray." -->
+    <p style="color: darkgray;">My text is gray.</p>
+
+    <h2>My favorite meme</h2>
+    <img src="large_wink.png">
+    <!-- Include: "large_wink.png" as an image -->
+    <!-- Tags to use: <img> -->
+    <!-- Hint! Use 'reference_sheet.html', which you downloaded with this file, to remember how to include an image. -->
+
+    <h2>Why I'm a great student</h2>
+    <ul> 
+    <li> <strong> I am hardworking. </strong></li>
+    <li> <strong> I am organized. </strong></li>
+    <li> <strong> I am proactive. </strong></li>
+</ul>
+
+
+    <!-- Include: Use 'reference_sheet.html' to figure out how to add an unordered list here -->
+    <!-- Tags to use: <ul>, <li>, <strong> -->
+
+    <h2>Top 3 most famous people from my hometown</h2>
+    <ol>
+        <li><a href="https://en.wikipedia.org/wiki/Lady_Gaga" target="_blank">Lady Gaga </a> </li>
+          <li> Jimmy Fallon </li>
+           <li> Alicia Keys </li>
+       </ol>
+
+    <!-- Include: an ordered list -->
+    <!-- Tags to use: <ol>, <li>, <a> -->
+
+
+    <h2> ~ Challenge: Read my poetry ~</h2>
+    <br> From Marshall Street to the Carrier Dome, </br>
+<br>Syracuse is a second home.</br>
+<br>Newhouse and basketball, a perfect pair,</br>
+<br>In Orange Nation, we all declare.</br>
+    <!-- Challenge! Use the internet to figure out what a <br> tag is. Write a short poem about your college experience so far. -->
+    <!-- Tags to use: <p> tags for your lines of poetry, and at least two <br> tags -->
+
+
+    <h2>This is one of my favorite quotes</h2>
+    <!-- Include: a quote from a book -- quote should be in italics and gray, title of source should be in an <h3> tag -->
+    <!-- Tags to use: <h3>, <p> with an id named 'quote' that is styled in the <style> section -->
+
+    <h3 id="quote-source">A Short Guide to a Happy Life by Anna Quindlen</h3>
+    <p id="quote">"Realize that life is glorious and you have no business taking it for granted. Care so deeply about its goodness that you want to spread it around."</p>
+
+    <h2>These are more of my favorite books</h2>
+    <!-- Include: an unordered list of at least three books, list items should have a border -->
+    <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
+    <ul>
+        <li class="book">Tuesdays with Morrie by Mitch Alboom</li>
+        <li class="book">Make your Bed by Admiral William H. McRaven </li>
+        <li class="book">Americanah by Chimamanda Ngozi Adichie</li>
+    </ul>
+
+    <h2>Here's how I normally spend my weekend</h2>
+    <!-- Include: a complete Datawrapper chart (you can make up data) showing what you normally spend time on over the weekend; must include all requirements of a complete chart (hed, subhed, intentional colors, byline, etc.) -->
+    <!-- Tags to use: <iframe> -->
+    <iframe src="https://datawrapper.dwcdn.net/zerrr/1/" width="600" height="500" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+    <h3>~ Challenge: A very simple bar graph ~</h3>
+    <!-- Challenge! Add CSS styles to '#longer' and '#long' to make the bar graph look like it's ordered from longest to shortest. You may also change the h4 text and the p text to make this simple bar chart reflect real (or fake) data. -->
+
+    <div id="bargraph">
+        <h4>Length of bars</h4>
+        <p class="bar_label">Longest</p>
+        <div id="longest"></div>
+        <p class="bar_label">Longer</p>
+        <div id="longer"></div>
+        <p class="bar_label">Long</p>
+         <div id="long"></div>
+        </div>
+     
+    </body>
+</html>
